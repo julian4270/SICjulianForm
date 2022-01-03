@@ -1,1 +1,5 @@
-<p>login</p>
+<p>Hello Julian Castellanos</p>
+<small *ngIf='invalidLogin'>{{invalidcredentials}}</small>
+User: <input type="text" name="txtuser" [(ngModel)]="username">
+Pass: <input type="password" name="txtpass"[(ngModel)]="pass">
+<button (click)=Send_login()>Start session</button>
